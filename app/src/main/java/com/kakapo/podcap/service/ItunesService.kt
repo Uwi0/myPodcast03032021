@@ -9,5 +9,5 @@ interface ItunesService {
     @GET(Constants.API_END_POINT)
     fun getPodcastAPI(
         @Query(Constants.TERM) term: String
-    ): Single<PodcastResponse>
+    ): Single<PodcastResponse.Podcast>
 }
