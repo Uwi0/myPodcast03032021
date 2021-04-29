@@ -4,10 +4,10 @@ package com.kakapo.podcap.service
 object PodcastResponse {
 data class Podcast(
     val resultCount: Int,
-    val results: List<Result>
+    val results: List<ItunesPodcast>
 )
 
-data class Result(
+    data class ItunesPodcast(
     val artistName: String,
     val artworkUrl100: String,
     val artworkUrl30: String,

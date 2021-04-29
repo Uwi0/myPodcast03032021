@@ -14,9 +14,9 @@ class ItunesApiService {
         .build()
         .create(ItunesService::class.java)
 
-    fun getPodcast(): Single<PodcastResponse.Podcast>{
+    fun getPodcast(term: String): Single<PodcastResponse.Podcast>{
         return api.getPodcastAPI(
-            Constants.TERM
+            term
         )
     }
 }
